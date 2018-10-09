@@ -28,10 +28,14 @@ _Shelf_:
 
 _Template_:
 
-![template_cereals](pictures/template.jpg)
+![template](pictures/template.jpg)
 
 ### Task #3 (optional)
 In previous task try implementing zero-mean cross-correlation (subtract the mean value of the template so that it has zero mean).
 
 See [find_favorite examples](examples/find_favorite.ipynb).
 
+### Task #4 (optional)
+Modify the algorithm for cases of variable light conditions using __normalized cross-correlation__ (normalize the pixels of the image and template at every step before comparing them). Test on dark shelf.
+
+![dark shelf](pictures/dark shelf.jpg)
