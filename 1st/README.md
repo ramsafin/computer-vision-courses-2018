@@ -8,7 +8,7 @@ Implement `conv_nested` function that is a naive implementation of convolution w
 
 ## Part 2. Cross-correlation
 
-### Task #1
+### Task #2
 
 Cross-correlation can be used to look for templates in images. Implement finding the template on the shelf using cross-correlation.
 
