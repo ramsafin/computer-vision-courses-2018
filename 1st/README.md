@@ -5,3 +5,19 @@
 ### Task #1
 
 Implement `conv_nested` function that is a naive implementation of convolution which uses 4 nested for-loops. It takes an image `I` and a kernel `k` as inputs and outputs the convolved image `f○h` that has the same shape as the input image. Assume that pixels that outside of source images borders have intensity 0. Test your `conv_nested` function on a real image using gaussian kernel (3x3).
+
+## Part 2. Cross-correlation
+
+### Task #1
+
+Cross-correlation can be used to look for templates in images. Implement finding the template on the shelf using cross-correlation.
+
+`Note!` The template is located in the 1st row of the shelf (the 2nd element from the left).
+
+_Shelf_:
+![shelf](pictures/cereals.png)
+
+_Template_:
+
+![template_cereals](pictures/template.jpg)
+
