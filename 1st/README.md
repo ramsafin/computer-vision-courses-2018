@@ -1,4 +1,4 @@
-# Filters, convolutions, and cross-correlation
+# Filters, convolution, and cross-correlation
 
 ## Part 1. Convolutions
 
@@ -52,3 +52,18 @@ _Dark shelf_:
   
   _In this case the match is correct._
 </details>
+
+## Part 3. Hybrid images
+
+## Task #5
+
+We want to construct the image convolution function (i.e. image filtering) and use it to create a **hybrid image**. The technique was invented by [Oliva, Torralba, and Schyns in 2006](http://cvcl.mit.edu/publications/OlivaTorralb_Hybrid_Siggraph06.pdf). High frequency image content tends to dominate perception but, at a distance, only low frequency (smooth) content is perceived. By blending high and low frequency content, we will be able to create a hybrid image that is perceived differently at different distances.
+A hybrid image is the sum of a **low-pass filtered** version of a first image and a **high-pass filtered** version of a second image. Use free parameter (cut-off frequency) for each image pair to control how much high frequency to remove from the first image and how much low frequency to leave in the second image.
+
+**HYBRID IMAGE EXAMPLE**
+
+// TODO add pictures of a cat and dog
+
+Adding the high and low frequencies together gives the hybrid image. If you're having trouble seeing the multiple interpretations of the image, a useful way to visualize the effect is by progressively downsampling the hybrid image:
+
+// TODO add pictures of hybrid images
