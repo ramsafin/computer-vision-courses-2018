@@ -32,3 +32,5 @@ _Template_:
 
 ![template_cereals](pictures/template.jpg)
 
+### Task #3 (optional)
+In previous task try implementing zero-mean cross-correlation (subtract the mean value of the template so that it has zero mean).
