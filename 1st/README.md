@@ -18,9 +18,7 @@ Cross-correlation can be used to look for templates in images. Implement finding
 <details>
   <summary>Answer</summary>
   
-  _No, it cannot properly detect the template._
-  
-  _However, found area is really close to the actual location of the template in the picture._
+  _No, it cannot properly detect the template. The actual place if far away ..._
 </details>
 
 ---
