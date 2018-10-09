@@ -44,3 +44,11 @@ Modify the algorithm for cases of variable light conditions using __normalized c
 
 _Dark shelf_:
 ![dark shelf](pictures/dark%20shelf.jpg)
+
+<details>
+  <summary>Solution</summary>
+  
+  See [find_favorite examples](examples/find_favorite.ipynb).
+  
+  _In this case the match is correct._
+</details>
