@@ -31,8 +31,6 @@ Cross-correlation can be used to look for templates in images. Implement finding
   </p>
 </p>
 
-_Template_:
-
 <p align="center">
   <img src="pictures/template.jpg">
   <p align="center">
