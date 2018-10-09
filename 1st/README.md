@@ -88,7 +88,7 @@ A hybrid image is the sum of a **low-pass filtered** version of a first image an
 Adding the high and low frequencies together gives the hybrid image. If you're having trouble seeing the multiple interpretations of the image, a useful way to visualize the effect is by progressively downsampling the hybrid image:
 
 <p align="center">
-  <img src="pictures/downsampled_cat_and_dog.jpg">
+  <img src="pictures/dowsampled_cat_and_dog.jpg">
   <p align="center">
     <b>Figure 8.</b>
     <i>Downsampled hybrid images of a CatDog</i>
