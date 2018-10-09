@@ -14,6 +14,17 @@ Cross-correlation can be used to look for templates in images. Implement finding
 
 `Note!` The template is located in the 1st row of the shelf (the 2nd element from the left).
 
+`Question.` Is it able to detect the template correctly?
+<details>
+  <summary>Answer</summary>
+  
+  _No, it cannot properly detect the template._
+  
+  _However, found area is really close to the actual location of the template in the picture._
+</details>
+
+---
+
 _Shelf_:
 ![shelf](pictures/cereals.png)
 
