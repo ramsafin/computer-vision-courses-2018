@@ -38,4 +38,5 @@ See [find_favorite examples](examples/find_favorite.ipynb).
 ### Task #4 (optional)
 Modify the algorithm for cases of variable light conditions using __normalized cross-correlation__ (normalize the pixels of the image and template at every step before comparing them). Test on dark shelf.
 
-![dark shelf](pictures/dark shelf.jpg)
+_Dark shelf_:
+![dark shelf](pictures/dark%20shelf.jpg)
