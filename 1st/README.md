@@ -18,7 +18,7 @@ Cross-correlation can be used to look for templates in images. Implement finding
 <details>
   <summary>Answer</summary>
   
-  _No, it cannot properly detect the template. The actual place is far away ..._
+  _No, it cannot properly detect the template. The actual location of the template is far away ..._
 </details>
 
 ---
@@ -36,11 +36,11 @@ In previous task try implementing zero-mean cross-correlation (subtract the mean
 <details>
   <summary>Solution</summary>
   
-  See [find_favorite examples](examples/find_favorite.ipynb).
+  See [find favorite examples](examples/find_favorite.ipynb).
 </details>
 
 ### Task #4 (optional)
-Modify the algorithm for cases of variable light conditions using __normalized cross-correlation__ (normalize the pixels of the image and template at every step before comparing them). Test on dark shelf.
+Modify the algorithm for cases of a variable light conditions using __normalized cross-correlation__ (normalize the pixels of the image and template at every step before comparing them). Test on dark shelf.
 
 _Dark shelf_:
 ![dark shelf](pictures/dark%20shelf.jpg)
