@@ -26,7 +26,7 @@ Cross-correlation can be used to look for templates in images. Implement finding
 ---
 
 _Shelf_:
-![shelf](pictures/cereals.png)
+![shelf](pictures/shelf.png)
 
 _Template_:
 
