@@ -32,3 +32,6 @@ _Template_:
 
 ### Task #3 (optional)
 In previous task try implementing zero-mean cross-correlation (subtract the mean value of the template so that it has zero mean).
+
+See [find_favorite examples](examples/find_favorite.ipynb).
+
