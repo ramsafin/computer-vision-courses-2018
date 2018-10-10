@@ -1,6 +1,6 @@
 # Filters, convolution, and cross-correlation
 
-## Part 1. Convolutions
+## Part 1. Convolution
 
 ### Task #1
 
