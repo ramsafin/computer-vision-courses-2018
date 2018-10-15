@@ -1,34 +1,40 @@
 % Convolves an image I with kernel k
-function J = conv_nested(I, k)
+function OutputImg = conv_nested(Img, kernel)
 
-    % the kernel size (in the 1st dimension)
-    kernel_size = size(k, 1);
+    [kernel_rows, kernel_cols] = size(kernel);
     
-    assert(mod(kernel_size, 2) == 1, "Kernel size must be odd.");
+    assert(mod(kernel_rows, 2) == 1 && mod(kernel_cols, 2) == 1, ...
+        "Kernel size must be odd.");
     
     % determine the image's size: rows, columns
-    [rows, cols, depth] = size(I);
+    [rows, cols, depth] = size(Img);
     
     assert(depth == 1, "Grayscale input image is required.");
     
-    % init the convolved image (zeros on borders)
+    % kernel center coordinates
+    pad_rows = fix(kernel_rows / 2);
+    pad_cols = fix(kernel_cols / 2);
+    
+    % create the resulting image (padded with zeros on borders)
     % 'uint8' type is used (default is double)
-    J = zeros(rows, cols, 'uint8');
+    PaddedImg = zeros(rows + kernel_rows - 1, ...
+        cols + kernel_cols - 1, 'double');
     
-    % find padding for the image
-    padding = fix(kernel_size / 2);
+    PaddedImg(pad_rows + 1:rows + pad_rows, ...
+        pad_cols + 1:cols + pad_cols) = Img;
     
-    for i = (1 + padding):(rows - padding)
-        for j = (1 + padding):(cols - padding)
-            kernel_sum = 0;
-            for u = -padding:padding
-                for v = -padding:padding
-                    % correspondant image and kernel elements product sum
-                    kernel_sum = kernel_sum + k(u + padding + 1, v + padding + 1) * I(i - u, j - v);
+    OutputImg = zeros(rows, cols,'uint8');
+    
+    for i = 1:rows
+        for j = 1:cols
+            for u = -pad_rows:pad_rows
+                for v = -pad_cols:pad_cols
+                    OutputImg(i, j) = OutputImg(i, j) ... 
+                        + kernel(u + pad_rows + 1, v + pad_cols + 1) ...
+                        * PaddedImg(i + pad_rows - u, j + pad_cols - v);
                 end
             end
-            % apply the kernel to the image's pixel
-            J(i, j) = kernel_sum;
         end
     end
+    
 end
