@@ -1,8 +1,8 @@
 % Finds the location of the template in the image.
-function [x_index, y_index] = find_favorite(t, I)
+function [x_index, y_index] = find_favorite(t, Img)
 
     % calculate the cross-correlation
-    c = xcorr2(t, I);
+    c = xcorr2(t, Img);
     
     % Find the peak in cross-correlation.
     % For this the max values indices are found

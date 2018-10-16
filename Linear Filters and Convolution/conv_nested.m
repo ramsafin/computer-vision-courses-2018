@@ -1,4 +1,4 @@
-% Convolves an image I with kernel k
+% Convolves the image with kernel.
 function OutputImg = conv_nested(Img, kernel)
 
     [kernel_rows, kernel_cols] = size(kernel);
