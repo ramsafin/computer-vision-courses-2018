@@ -9,7 +9,7 @@ function OutputImg = conv_nested(Img, kernel)
     % determine the image's size: rows, columns
     [rows, cols, depth] = size(Img);
     
-    assert(depth == 1, "Grayscale input image is required.");
+    assert(depth == 1, "Greyscale input image is required.");
     
     % kernel center coordinates
     pad_rows = fix(kernel_rows / 2);
