@@ -16,7 +16,6 @@ function OutputImg = conv_nested(Img, kernel)
     pad_cols = fix(kernel_cols / 2);
     
     % create the resulting image (padded with zeros on borders)
-    % 'uint8' type is used (default is double)
     PaddedImg = zeros(rows + kernel_rows - 1, ...
         cols + kernel_cols - 1, 'double');
     
