@@ -1,6 +1,6 @@
-# cv-courses-2018
+# CV Courses
 
-Computer Vision Courses in Kazan Federal University, ITIS (2018).
+Computer Vision Courses in Kazan Federal University, ITIS.
 
 ## Useful Resourses
 - [CV courses on Udacity](https://classroom.udacity.com/courses/ud810/)
